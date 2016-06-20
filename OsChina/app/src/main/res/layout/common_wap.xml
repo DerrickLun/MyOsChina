@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_match">
+
+    <WebView android:id="@+id/webview_id" android:background="@android:color/white"
+        style="@style/layout_match"/>
+
+</RelativeLayout>

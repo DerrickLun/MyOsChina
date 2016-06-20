@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wuxianedu.corelib.widget.TipInfoLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tip_info_find" style="@style/layout_match">
+
+    <com.wuxianedu.corelib.widget.RefreshLayout android:id="@+id/id_refresh"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/id_lv"  android:layout_width="match_parent"
+            android:layout_height="match_parent" android:scrollbars="vertical"/>
+    </com.wuxianedu.corelib.widget.RefreshLayout>
+
+</com.wuxianedu.corelib.widget.TipInfoLayout>

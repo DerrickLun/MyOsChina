@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml;charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="file:///android_asset/html/css/common.css" rel="stylesheet" type="text/css"/>
+        <link href="file:///android_asset/html/css/module.css" rel="stylesheet" type="text/css"/>
+
+        <link href="file:///android_asset/html/css/comment.css" rel="stylesheet" type="text/css"/>
+        <link href="file:///android_asset/html/css/caipiao.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="css/vote.css" rel="stylesheet" type="text/css"/>-->
+        <link href="file:///android_asset/html/css/plugin.css" rel="stylesheet" type="text/css"/>
+        <link href="file:///android_asset/html/css/dealer.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="css/live.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="file:///android_asset/html/newspage.js"></script>
+        <style type="text/css">
+            /*字体设置放到CSS中没有效果（待解惑）*/
+            body {
+                font-family: 'myface';
+            }
+            //只针对开源中国制定
+            //元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。
+            //标签的一个常见应用就是用来表示计算机的源代码。
+            //而我们经常碰到的一个问题是如果一个代码上碰到有图片或者网页地址就会使代码很长，结果会造成页面撑开或者代码超出边界。非常难受
+            //的内容自动换行
+            pre{
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="title_pre">*****</div>
+        <!-- <div id="article_body" class="contentstyle"></div> -->
+        <div id="moreButton" class="viewMore contentpaddingstyle" style="clear:both; display:none;">
+            <a href="javascript:;" hidefocus="true" onclick="over(this);">
+            	<em id="loading" class="loading">正在载入...</em>
+				<span id="showmore" class="viewMore-btn">查看全文</span>
+			</a>
+        </div>
+    </body>
+
+</html>
+

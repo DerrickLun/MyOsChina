@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">corelib</string>
+    <string name="not_network">当前网络不可用，请检查网络设置</string>
+    <string name="pull_to_loading">正在加载，请稍候...</string>
+    <string name="tip_loading">正在加载...</string>
+    <string name="tip_load_network_error">没有可用网络</string>
+    <string name="tip_load_error">数据加载失败</string>
+    <string name="tip_load_empty">暂无数据</string>
+</resources>

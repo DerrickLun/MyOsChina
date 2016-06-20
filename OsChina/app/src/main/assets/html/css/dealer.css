@@ -1,0 +1,102 @@
+/*经销商模块*/
+#dealer_section {
+	position: relative;
+	background: #ededed;
+	padding: 10px;
+	margin: 0 4%;
+}
+#dealer_section .name {
+	color: #000000;
+}
+#dealer_section .address {
+	color: #828282;
+	margin: 7px 0 12px 0;
+	vertical-align: middle;
+}
+#dealer_section .address img {
+	width: 16px;
+	height: 18px;
+	margin-right: 2px;
+	vertical-align: middle;
+}
+#dealer_section .address span {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.6);
+	line-height: 14px;
+	vertical-align: middle;
+	margin-left: 3px;
+}
+#dealer_section .bottom {
+	width: 100%;
+	height: 20px;
+	margin-bottom: 8px;
+}
+#dealer_section .phone {
+	background: #39aa73;
+	color: #ffffff;
+	float: left;
+	border-radius: 15px;
+	padding: 6px 8px 5px 8px;
+	font-size: 14px;
+	line-height: 14px;
+}
+#dealer_section .ext {
+	float: left;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.6);
+	margin-left: 9px;
+	line-height: 16px;
+	margin-top: 5px;
+}
+#dealer_section .authentication {
+	float: right;
+	color: #df3031;
+	font-size: 14px;
+	line-height: 16px;
+	margin-top: 4px;
+	border-color: #e7a1a2;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 1px 3px 1px 3px;
+}
+#dealer_section .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    color: #df3031;
+    margin: 8px 10px 0 0;
+}
+#dealer_section .price > span {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 2px;
+}
+/*经销商夜间*/
+body.night #dealer_section .name {
+	color: #999999;
+}
+body.night #dealer_section {
+	background: #222222;
+}
+body.night #dealer_section .price {
+	color: #6f1818;
+}
+body.night #dealer_section .price > span {
+	color: #8d8d8d;
+}
+body.night #dealer_section .address > span {
+	color: #8d8d8d;
+}
+body.night #dealer_section .phone {
+	background: #1c5539;
+	color: #999999;
+}
+body.night #dealer_section .authentication {
+	color: #6f1818;
+	border-color: #411e1e;
+}
+body.night #dealer_section .ext {
+	color: #8d8d8d;
+}

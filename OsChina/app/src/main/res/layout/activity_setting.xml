@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--<android.support.v7.widget.Toolbar android:id="@+id/toolbar_setting"-->
+        <!--android:layout_width="match_parent" android:title="@string/setting"-->
+        <!--android:layout_height="wrap_content" style="@style/ToolbarTheme"/>-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <LinearLayout android:padding="20dp" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatTextView android:id="@+id/tv_normal_setting"
+            android:layout_width="wrap_content" android:text="@string/normal_setting"
+            android:layout_height="wrap_content" android:textColor="?attr/colorPrimary"/>
+        <RelativeLayout android:id="@+id/ll_right_mode"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.SwitchCompat android:id="@+id/swi_right_mode" android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content" android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_right_mode"
+                style="@style/text_setting" android:text="@string/right_mode"
+                android:layout_marginTop="20dp" />
+            <TextView android:id="@+id/tv_right_mode_hint" android:layout_below="@+id/tv_right_mode"
+                android:layout_width="match_parent" android:text="@string/right_mode_hint"
+                android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+        <View style="@style/line"/>
+
+        <RelativeLayout android:id="@+id/ll_language_mode"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatCheckBox android:id="@+id/cb_language_mode"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content" android:layout_centerVertical="true"
+                android:layout_height="wrap_content" android:checked="true" />
+            <TextView android:id="@+id/tv_language_type"
+                style="@style/text_setting" android:text="@string/language_type"
+                android:layout_marginTop="20dp" />
+            <TextView android:id="@+id/tv_language_type_hint" android:layout_below="@+id/tv_language_type"
+                android:layout_width="match_parent" android:text="@string/language_type_hint"
+                android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+        <View style="@style/line"/>
+
+        <TextView android:id="@+id/tv_clear_cache" android:layout_marginTop="20dp"
+            style="@style/text_setting" android:text="@string/clear_cache"/>
+        <TextView android:id="@+id/tv_cache"  android:text="@string/test_cache"
+            android:layout_width="wrap_content" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.AppCompatTextView android:layout_marginTop="20dp"
+            android:layout_width="wrap_content" android:text="@string/other_setting"
+            android:layout_height="wrap_content" android:textColor="?attr/colorPrimary"/>
+        <TextView android:id="@+id/tv_feedback" style="@style/text_setting"
+            android:text="@string/feedback" android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+        <View style="@style/line"/>
+        <TextView android:id="@+id/tv_give_mark" style="@style/text_setting"
+            android:text="@string/give_mark" android:layout_marginTop="20dp"/>
+        <TextView android:id="@+id/tv_give_mark_hint" android:layout_marginTop="5dp"
+            android:layout_width="wrap_content" android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" android:text="@string/give_mark_hint" />
+        <View style="@style/line"/>
+    </LinearLayout>
+
+</LinearLayout>

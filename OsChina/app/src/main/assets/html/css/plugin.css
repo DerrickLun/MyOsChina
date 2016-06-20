@@ -1,0 +1,152 @@
+.plugin_box {
+  border: #e6e6e6 solid 1px;
+  border-radius: 5px;
+  margin: 12px 4% 3px 4%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  width:90%; 
+  height:80px;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.08);
+}
+.plugin_m {
+  margin: 0px 0 0 2px;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  padding-left: 5px;
+}
+.plugin_l {
+  margin: 0 0 0 5px;
+  width: 59px;
+  height: 80px;
+}
+.plugin_r {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-left: 1px solid #e8e8e8;
+}
+body.night .plugin_r {
+  border-left-color: #353535;
+}
+.plugin_p {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #eb413d;
+}
+.plugin_arrow {
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px 0px 0 31px; 
+}
+.plugin_cat {
+  font-size: 14px;
+  color: #3f3f3f;
+  text-align: center;
+}
+body.night .plugin_cat {
+  color: #999999;
+}
+.plugin_icon {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-left: 6px;
+  width: 59px;
+  height: 59px;
+}
+body.night {
+  opacity: 0.5;
+}
+.plugin_avatar {
+  -moz-border-radius: 29px;
+  -webkit-border-radius: 29px;
+  border-radius: 29px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 59px;
+  height: 59px;
+}
+.plugin_title {
+  margin: 0px 0 8px 10px;
+  font-size: 18px;
+  color: #3f3f3f;
+  line-height: 20px;
+}
+body.night .plugin_title {
+  color: #999999;
+}
+.plugin_desc {
+  font-size: 12px;
+  margin: 0px 0 0 10px;
+  color: #989898;
+  line-height: 14px;
+}
+body.night .plugin_box {
+  border: #38383a solid 1px;
+  background-color: #2d2d2d;
+}
+body.night .plugin_p {
+  color: #999999;
+}
+body.night .plugin_title {
+  color: #999999;
+}
+body.night .plugin_icon {
+  opacity:0.5;
+}
+
+/* 打赏小编 */
+.reward_img {
+  width: 18px;
+  height: 14px;
+  margin: 25px 0 0 31px;
+  clear: both;
+}
+.reward_text {
+  font-size: 13px;
+  color: #4e9ae8;
+  line-height: 13px;
+  clear: both;
+  text-align: center;
+}
+.reward_r {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-left: 1px solid #e8e8e8;
+}
+body.night .reward_r {
+  background-color: #01547a;
+  border-left-color: #353535;
+}
+body.night .reward_text {
+  color: #ababab;
+}
+
+/*广告node*/
+.ad_node_flag {
+  margin: -24px 6% 0 0;
+  padding: 0.1em 0 0.1em 0px;
+  text-align: right;
+  float: right;
+}
+.ad_node_flag .text {
+  border: 1px #9bcef7 solid;
+  color: #2196f3;
+  padding: 0 1px;
+  font-size: 11px;
+  line-height: 15px;
+  border-radius: 2px;
+}
+body.night .ad_node_flag .text {
+  border-color: #224059;
+  color: #125289;
+}
+body.night .ad_node_flag {
+  color: #ec653b;
+}

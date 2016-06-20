@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_match">
+    <Button android:id="@+id/bt_logout" style="@style/layout_match_wrap"
+        android:background="@drawable/btn_bg" android:padding="10dp"
+        android:text="@string/logout" android:textColor="@android:color/white"
+        android:textSize="18sp" android:layout_margin="20dp"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:layout_above="@id/bt_logout">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp" android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" android:text="@string/genenal_info"
+            android:textColor="?attr/colorPrimary" android:textSize="18sp" />
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:padding="10dp">
+                <com.wuxianedu.oschina.widget.RoundImageView android:id="@+id/portrait"
+                    android:layout_width="60dp" android:layout_height="60dp"
+                    android:layout_alignParentStart="true" android:src="@mipmap/mini_avatar" />
+
+                <TextView android:id="@+id/usernameTitle" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp" android:layout_toEndOf="@id/portrait"
+                    android:text="@string/username" />
+
+                <TextView android:id="@+id/username" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignTop="@id/usernameTitle"
+                    android:layout_marginStart="5dp" android:layout_toEndOf="@id/usernameTitle"
+                    android:textColor="?attr/colorPrimary"/>
+
+                <TextView android:id="@+id/descriptionTitle" android:layout_alignStart="@id/usernameTitle"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_below="@id/usernameTitle" android:layout_marginTop="10dp"
+                    android:text="@string/description" />
+
+                <TextView android:id="@+id/description" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignTop="@id/descriptionTitle"
+                    android:layout_marginStart="5dp" android:layout_toEndOf="@id/descriptionTitle"
+                    android:text="@string/description_null" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp" android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp" android:text="@string/additional_info"
+            android:textColor="?attr/colorPrimary" android:textSize="18sp" />
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.wuxianedu.corelib.widget.ListViewForScroll android:id="@+id/listview"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:divider="@android:color/transparent" android:dividerHeight="0dp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

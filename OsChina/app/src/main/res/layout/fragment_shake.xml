@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_match" android:id="@+id/mainBody_shake">
+
+    <ImageView android:id="@+id/shakeBg" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerInParent="true"
+        android:src="@mipmap/shakehideimg_man"
+        android:contentDescription="@string/loading" />
+
+    <LinearLayout android:id="@+id/shake_content" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_centerInParent="true"
+        android:gravity="center" android:orientation="vertical">
+
+        <RelativeLayout android:id="@+id/shakeImgUp" android:layout_width="match_parent"
+            android:layout_height="140dip" android:visibility="visible">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+                android:src="@mipmap/shake_logo_up" android:contentDescription="@string/loading"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/shakeImgDown" android:layout_width="match_parent"
+            android:layout_height="140dip" android:visibility="visible">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" android:src="@mipmap/shake_logo_down"
+                android:contentDescription="@string/loading"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/shake_loading" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignBottom="@id/shake_content"
+        android:layout_marginTop="20dp" android:gravity="center"
+        android:orientation="horizontal" android:visibility="gone">
+        <ProgressBar android:layout_width="20dip" android:layout_height="20dip"
+            android:layout_margin="5dip" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/searching_project" android:textColor="?attr/colorPrimary" />
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/shake_project" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_margin="10dip" android:visibility="gone">
+        <include layout="@layout/item_project" android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

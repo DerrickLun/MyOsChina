@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_match" android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/core_toolbar"/>
+
+    <com.wuxianedu.corelib.widget.TipInfoLayout android:id="@+id/fl_panent_id"
+        style="@style/layout_match">
+	    <LinearLayout android:id="@+id/view_mainBody_id" style="@style/layout_match"
+	        android:orientation="vertical" />
+    </com.wuxianedu.corelib.widget.TipInfoLayout>
+
+</LinearLayout>
